@@ -125,9 +125,14 @@ This ensures mathematical consistency across base currencies.
 
 For each currency *i* at time *t*:
 
-```
-r_i,t = ln(FX_base/i,t / FX_base/i,t-1)
-```
+$`
+r_{i,t} = ln(\frac{FX_{base/i,t}}{FX_{base/i,t−1}})
+`$
+
+Where: 
+* $`r_{i,t}`$ is the log return of currency *i* at time *t*
+* $`FX_{base/i,t}`$ is the exchange rate at time *t*
+* $`FX_{base/i,t-1}`$ is the exchange rate at time *t-1*
 
 Log returns are used for:
 
@@ -139,27 +144,29 @@ Log returns are used for:
 
 ### 6.3 Aggregation
 
-Let weights w_i satisfy:
+Let weights $`w_i`$ satisfy:
 
-```
-Σ w_i = 1
-```
+$`
+\sum{w_i} = 1
+`$
 
 Index return at time *t*:
 
-```
-R_t = Σ w_i · r_i,t
-```
+$`
+R{_t} = \sum{w_i} \cdot r{_i,t}
+`$
 
+The index return represents the weighted log return of the base currency against a basket of foreign currencies.
 ---
+
 
 ### 6.4 Index Level
 
 The index is normalized to 100 at the start date:
 
-```
-Index_t = 100 · exp(Σ R_τ)
-```
+$`
+I{_t} = I_0 \cdot exp(\sum_{k=1} ^{t} R_k), I_0 = 100
+`$
 
 Interpretation:
 
@@ -214,7 +221,7 @@ Rationale:
 * **DXY (US Dollar Index)** used as a reference benchmark for USD-based analysis
 * **DTWEXBGS (Nominal Broad U.S. Dollar Index)** used as a reference benchmark for USD-based analysis
 
-GCSI is positioned as a complementary and more globally representative alternative.
+GCSI is positioned as a complementary and more globally representative alternative than DXY and similar to DTWEXBGS.
 
 ---
 
