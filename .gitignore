@@ -82,3 +82,6 @@ pytest_cache/
 # ======================
 dist/
 build/
+
+# Python packaging metadata
+*.egg-info/
