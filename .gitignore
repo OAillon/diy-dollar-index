@@ -1,0 +1,84 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ======================
+# Virtual environments
+# ======================
+.venv/
+venv/
+env/
+ENV/
+
+# Conda
+.conda/
+conda-env/
+
+# ======================
+# Jupyter / Notebooks
+# ======================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Optional: if you ever export outputs
+notebooks/**/outputs/
+
+# ======================
+# Environment variables / secrets
+# ======================
+.env
+.env.*
+secrets.toml
+
+# ======================
+# Streamlit
+# ======================
+.streamlit/secrets.toml
+.streamlit/.credentials
+.streamlit/.cache/
+
+# ======================
+# Data (VERY IMPORTANT FOR THIS PROJECT)
+# ======================
+data/raw/
+data/interim/
+data/external/
+data/processed/*.parquet
+data/processed/*.csv
+
+# Allow small sample data if you want
+!data/processed/sample_*.csv
+
+# ======================
+# Logs
+# ======================
+logs/
+*.log
+
+# ======================
+# OS / Editor junk
+# ======================
+.DS_Store
+Thumbs.db
+
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ======================
+# Build / cache
+# ======================
+.cache/
+pytest_cache/
+.mypy_cache/
+
+# ======================
+# Streamlit build artifacts
+# ======================
+dist/
+build/

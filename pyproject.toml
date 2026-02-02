@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "currency-index"
+authors = [{name = "Oscar Aillon", email = "oscar.aillon.oa@gmail.com"}]
+version = "0.1.0"
+description = "Customizable currency strength and FX index built from exchange rate data"
+requires-python = ">=3.10"
+
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+
+  "scipy>=1.11",
+  "statsmodels>=0.14",
+
+  "requests>=2.31",
+  "yfinance>=0.2.36",
+
+  "plotly>=5.18",
+  "plotly>=5.18",
+
+  "streamlit>=1.31"
+]
