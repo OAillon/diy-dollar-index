@@ -22,5 +22,6 @@ dependencies = [
   "plotly>=5.18",
   "plotly>=5.18",
 
-  "streamlit>=1.31"
+  "streamlit>=1.31",
+  "ipykernel>=6.0"
 ]
