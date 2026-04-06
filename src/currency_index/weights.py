@@ -17,4 +17,7 @@ def fixed_weights(
     Validates and normalizes fixed user-defined weights.
     """
     w = pd.Series(weights)
-    return w / w.sum()
+    total = w.sum()
+    if total <= 0:
+        raise ValueError("Weights must sum to a positive value.")
+    return w / total
