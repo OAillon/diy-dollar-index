@@ -228,16 +228,36 @@ GCSI is positioned as a complementary and more globally representative alternati
 ## 11. Project Structure (High-Level)
 
 ```
-├── data/
-│   └── fx_rates.csv
-├── src/
-│   ├── index.py
-│   ├── data_loader.py
-│   └── utils.py
 ├── app.py  # Streamlit MVP
-├── README.md
-└── requirements.txt
+├── data/
+│   └── raw/
+├── notebooks/
+├── pyproject.toml
+├── readME.md
+└── src/
+    └── currency_index/
+        ├── __init__.py
+        ├── fx_data.py
+        ├── index_builder.py
+        ├── returns.py
+        └── weights.py
 ```
 
 ---
+
+## 12. Run the Streamlit Dashboard
+
+1. Install the project in editable mode:
+
+```bash
+python -m pip install -e .
+```
+
+2. Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+If you prefer not to install the package, open `app.py` from the root and Streamlit will add `src/` to `sys.path` automatically.
 
