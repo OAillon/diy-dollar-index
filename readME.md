@@ -1,5 +1,5 @@
 # Global Currency Strength Index (GCSI)
-[diy-dollar-index.streamlit.app](diy-dollar-index.streamlit.app)!
+[https://diy-dollar-index.streamlit.app/](https://diy-dollar-index.streamlit.app/)
 ## DISCLAIMER
 
 This project is for educational and analytical purposes only and does not constitute financial or investment advice.
@@ -261,4 +261,4 @@ streamlit run app.py
 
 If you prefer not to install the package, open `app.py` from the root and Streamlit will add `src/` to `sys.path` automatically.
 
-This will create a local streamlit app. For the deployed version, please visit [diy-dollar-index.streamlit.app](diy-dollar-index.streamlit.app)!
+This will create a local streamlit app. For the deployed version, please visit [diy-dollar-index.streamlit.app](https://diy-dollar-index.streamlit.app/)!
